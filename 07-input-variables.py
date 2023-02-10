@@ -8,6 +8,7 @@ print(f'The data type of the variable "number" is: {type(number)}')
 #Usar "eval" cuando el usuario ingrese el valor, entonces Python identificará que tipo de variable se esta ingresando.
 #Esto es optimo cuando el valor esperado es de tipo "int" o "float"
 number1=eval(input('Enter the first number:'))
+print(f'The data type of the variable "number" is: {type(number1)}')
 number2=eval(input('Enter the second number:'))
 #A continuación crearemos una variable donde su valor realiza una suma
 result=number1+number2
