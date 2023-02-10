@@ -4,7 +4,7 @@ age=27
 name='Melissa'
 status='Soltera'
 
-#Aqui vamos a imprimir incluyendo nuestro propio texto. A esto se le llamada concatenar texto comn variables, y podemos hacerlo con ayuda de comas ","
+#Aqui vamos a imprimir incluyendo nuestro propio texto. A esto se le llamada concatenar texto con variables, y podemos hacerlo con ayuda de comas ","
 print("Su nombre es:",name,"\nTiene:",age,"\nEsta:",status) # El "\n" es un caracter especial que imprime un salto de linea
 
 #Tambien podemos imprimir de la siguiente forma que nos permite cambiar el orden en como se va a imprimir el valor de cada variable
