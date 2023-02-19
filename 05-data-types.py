@@ -24,7 +24,7 @@ print(isActive,type(isActive))
 #Podemos cambiar el tipo de una variable de la siguiente forma:
 
 w=27
-v=str(w) #De esta forma estamos declarando una variable llamada "v" la cual le esta cambiando el tipo de "number" a "string" a la variable "w" 
+v=str(w) #De esta forma estamos declarando una variable llamada "v" la cual le esta cambiando el tipo de "int" a "string" a la variable "w" 
 print('w is',type(v)) #Veremos que al imprimir esto nos muestra que la variable w es de tipo string.
 
 #NOTA: Cualquier tipo de dato puede ser convertido a un "string", pero NO podemos convertir por ejemplo un "string" a un "integer"

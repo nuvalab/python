@@ -10,3 +10,6 @@ multiples
 lineas
 
 '''
+
+nombre_completo = "Esteban"
+print(nombre_completo)

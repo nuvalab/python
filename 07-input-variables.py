@@ -10,6 +10,7 @@ print(f'The data type of the variable "number" is: {type(number)}')
 number1=eval(input('Enter the first number:'))
 print(f'The data type of the variable "number" is: {type(number1)}')
 number2=eval(input('Enter the second number:'))
+print(f'The data type of the variable "number" is: {type(number2)}')
 #A continuación crearemos una variable donde su valor realiza una suma
 result=number1+number2
 

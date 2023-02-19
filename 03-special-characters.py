@@ -1,12 +1,13 @@
 #Escapear caracteres especiales
 print("This is a \"Python\" Class")
+print('This is a "Python" Class')
 
 #Salto de linea:
 print("\n")
-print("Welcome Esteban! \n You are my best friend ever")
+print("Welcome Esteban! \nYou are my best friend ever")
 
 #Borrar un caracter a la izquierda
-print("Esto borra algunas letras \b\b\b\b de este texto")
+print("Esto borra algunas letras de\b\b\b\b este texto ")
 
 
 #Agregar una tabulación
