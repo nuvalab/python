@@ -11,7 +11,7 @@ print(my_string)
 
 
 #Tambien podemos darnos cuenta que tipo de "Data Structure" es (Veremos que nos dira que en este caso es tipo "List"):
-print(my_string,type(my_string))
+print(type(my_string))
 
 
 #Podemos ver las diferentes funciones/metodos disponibles para este tipo de Estructura de Datos:
@@ -38,10 +38,10 @@ print(my_string[2][2]) #El primer 2 correponde el indice  en el que esta la pala
 print(my_string[1:])
 
 
-No se en que esto pueda ser util pero para imprimir todos los elementos de la lista tenemos tres opciones
-print(my_string)
-print(my_string[:])
-print(my_string[0:])
+#No se en que esto pueda ser util pero para imprimir todos los elementos de la lista tenemos tres opciones
+# print(my_string)
+# print(my_string[:])
+# print(my_string[0:])
 
 #Aqui vamos a imprimir desde el indice 1, y luego el numero despues de los dos puntos "3" lo restamos con el primer numero "1", osea 3-1=2. 
 #Entonces se imprimiran dos indices a partir del numero de indice 1:
@@ -56,9 +56,14 @@ print(my_string)
 
 '''
 
+
+
+
+#'''
+
 #Definamos otra "Data Structure Variable" para que veamos otras cosas que podemos hacer:
 
-my_list=[3,5,'Esteban',7,9,11,13,'Esteban',15,'Esteban']
+my_list=[3,5,'Esteban',7,9,11,7,13,'Esteban',15,'Esteban']
 
 
 #print(dir(my_list))
@@ -67,7 +72,7 @@ print(f'Esto es: {my_list.index("Esteban", 8)}') #El primer argumento "Esteban" 
 
 
 #Ahora veamos una forma para contar la cantidad de veces que se repite un elemento en la lista
-print(my_list.count('Esteban'))
+print(my_list.count("Esteban"))
 
 
 #Con "clear" podemos limpiar o vaciar el listado de datos que contiene la variable "my_list"
@@ -95,11 +100,11 @@ new_list=[327,'Aries'] #Creamos la nueva variable donde su valor es un nuevo lis
 my_list.extend(new_list) #Aqui ustilizamos la funcion "extend()". Incialmente ponemos el nombre de la variable que deseamos extender y entre parentesis la variable que contiene los nuevos elementos
 print(my_list) #Llamamos a la variable inicial que ya fue modificada en la linea anterior
 
-'''
+
 #Para eliminar algun elemento de la lista
-my_list.remove('Esteban') #Si el elemento esta repetido en la lista, elimina el que este mas a la izquierda
-print(my_list)
-'''
+# my_list.remove('Esteban') #Si el elemento esta repetido en la lista, elimina el que este mas a la izquierda
+# print(my_list)
+
 
 
 #Si queremos eliminar un elemento y queremos ser especificos en cual posicion está:
@@ -114,3 +119,5 @@ my_number_list=[3,27,7,15,9,1,3.7] #Aqui tuvimos que crear una nueva variable po
 #my_number_list.sort() #De esta forma los ordena de menor a mayor
 my_number_list.sort(reverse=True) #Si queremos ordenarlos de mayor a menor podemos usar el parametro "reverse=True"
 print(my_number_list)
+
+#'''
