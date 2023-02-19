@@ -1,4 +1,5 @@
-#"Data Structure Variable" Listas/Arrays
+#Data Structure: Listas/Arrays
+
 '''
 
 # Para declarar una lista/array
