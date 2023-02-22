@@ -25,7 +25,7 @@ print(bool(my_tuple)) #Aqui deberia retornanos un "True" ya que esta contiene el
 print(my_tuple[3]) #Aqui estamos imprimiendo el index 3 de la tupla llamada "my_tuple"
 print(my_tuple[2:]) #Aqui estaria imprimiendo desde el indice 2 en adelante
 print(my_tuple[:4]) #Aqui estaria imprimiendo 4 elementos de la lista
-print("Test",my_tuple[2:4]) #Aqui le estamos diciendo que inicie desde el indice 2, y el segundo numero "5", se le resta a 2 (5 - 2 = 3), entonces se imprimen 3 elementos a partir del segundo indice
+print("Test",my_tuple[2:5]) #Aqui le estamos diciendo que inicie desde el indice 2, y el segundo numero "5", se le resta a 2 (5 - 2 = 3), entonces se imprimen 3 elementos a partir del segundo indice
 
 
 
@@ -42,7 +42,7 @@ print(f'La cantidad de elementos que tiene la tupla llamada "my_tuple", son: {le
 
 #Cuantas veces se repite un elemento con el mismo nombre en la lista
 print(f"La cantidad de veces que se repite el numero 3 es: {my_tuple.count(3)}") #Dado que en la lista de ejemplo el numero 3 se repite dos veces, deberia darnos como resultado "2"
-print('El numero de index del elemento llamado "3" (pero el 3 del final) es:',my_tuple.index(3,1)) #Aca pusimos (3,1) porque quedemos saber el numero de index del "3" que esta al final ya que se repite
+print('El numero de index del elemento llamado "3" (pero el 3 del final) es:',my_tuple.index(3,1)) #Aca pusimos (3,1) porque queremos saber el numero de index del "3" que esta al final ya que se repite
 # entonces le indicamos que busque a partir del index "1" ya que en el index "0" esta el primer "3"
 
 print(len(my_tuple))
