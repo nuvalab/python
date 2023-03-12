@@ -9,10 +9,10 @@ print(bool(dictionarie)) #Con esto podemos darnos cuenta si el diccionario esta 
 
 '''
 #Vamos a definir un diccionario con info dentro
-
-
-
 my_dict={'fruit':'apple','animal':'fox','1':'one','2':'two'}
+#Otra forma de crear un diccionario:
+diccionario = dict(nombre="Esteban",nacionalidad="Colombiano",profesion="Marketer")
+
 print(my_dict) #De esta forma imprimimos todo el diccinario
 print(my_dict['fruit']) #Aqui estamos indicando el nombre de la clave/key que queremos consultar. Entonces nos mostrará su respectivo valor/value
 print(my_dict.get('Color')) #Esta es otra forma de consultar alguna clave del diccionario, el resultado es el mismo de la linea anterior, pero si digamos la clave no existe en el diccionario
