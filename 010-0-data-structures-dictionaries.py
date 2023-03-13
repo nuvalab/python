@@ -1,6 +1,7 @@
 #Este tipo de coleccion se basa en clave/valor. Veamos como se define un diccionario
+
 '''
-dictionarie={}#Esto seria un diccionario vacio
+dictionarie={"name":"Esteban"}#Esto seria un diccionario vacio
 print(type(dictionarie)) #Con esto podemos validar el tipo de variable. En este caso es de tipo diccionario
 print(bool(dictionarie)) #Con esto podemos darnos cuenta si el diccionario esta vacio, si es asi nos apareceria un "False"
 
@@ -10,17 +11,17 @@ print(bool(dictionarie)) #Con esto podemos darnos cuenta si el diccionario esta 
 '''
 #Vamos a definir un diccionario con info dentro
 my_dict={'fruit':'apple','animal':'fox','1':'one','2':'two'}
-#Otra forma de crear un diccionario:
-diccionario = dict(nombre="Esteban",nacionalidad="Colombiano",profesion="Marketer")
+#Otra forma dedict(nombre="Esteban",nacionalidad="Colombiano",profesion="Marketer") crear un diccionario:
+# diccionario = dict(nombre="Esteban",nacionalidad="Colombiano",profesion="Marketer")
 
 print(my_dict) #De esta forma imprimimos todo el diccinario
 print(my_dict['fruit']) #Aqui estamos indicando el nombre de la clave/key que queremos consultar. Entonces nos mostrará su respectivo valor/value
-print(my_dict.get('Color')) #Esta es otra forma de consultar alguna clave del diccionario, el resultado es el mismo de la linea anterior, pero si digamos la clave no existe en el diccionario
+print(my_dict.get('Color', 'Esta clave no existe')) #Esta es otra forma de consultar alguna clave del diccionario, el resultado es el mismo de la linea anterior, pero si digamos la clave no existe en el diccionario
 #el resultado impreso sera "None" en vez de un error de codigo. Tambien podemos especificar un mensaje a mostrar en caso de que la clave no exista. Ejemplo
 # print(my_dict.get('Color',"Esta Clave no existe en el diccionario"))
 # Tambien podemos buscar si una clave/key existe o no dentro de un diccionario, y que nos devuelva como respuesta un valor Booleano:
-print(10 in my_dict) #Como indique en la linea anterior este solo sirve para los "Keys", si queremos validar en los "Values", debemos hacerlo de la siguiente forma:
-print("apple" in my_dict.values())
+print("animal" in my_dict) #Como indique en la linea anterior este solo sirve para los "Keys", si queremos validar en los "Values", debemos hacerlo de la siguiente forma:
+print("esteban" in my_dict.values())
 
 
 #Si queremos ver todas las operaciones/metodos disponibles para los diccionarios:
@@ -42,6 +43,8 @@ print(my_dict)
 '''
 
 
+
+
 '''
 
 #Si queremos imprimir el listado de claves que tenemos en nuestro diccionario:
@@ -59,7 +62,7 @@ print(my_dict.items())
 
 #Dado que el resultado de la linea anterior se nos muestra en Tuplas, podemos entonces con un LOOP recuperar la clave y valor de la siguiente forma:
 
-for k,v in my_dict.items: #Las variables de control "k" y "v" pueden ser nombradas como queramos
+for k,v in my_dict.items(): #Las variables de control "k" y "v" pueden ser nombradas como queramos
     print(f'Key is {k} and Value is {v}')
 
 
@@ -106,6 +109,7 @@ print(new_dict)
 
 
 
+
 '''
 
 #Vamos a explicar el metodo "setdeafult()"
@@ -118,7 +122,7 @@ materiales = { #Aqui vemos una forma un poquito diferente de declarar diccionari
 
 articulo = input("Ingrese el nombre del articulo: ") #Esto es una variable de entrada para que el usuario indique el nombre del articulo dentro de los materiales
 
-unidades = materiales.get(articulo, 0) #Aqui cuando le ponemos como argumento ola variable "articulo", a la funcion "get()", le estamos indicando que busque en el diccionario la clave indicada por el usuario.
+unidades = materiales.get(articulo, 0) #Aqui cuando le ponemos como argumento o la variable "articulo", a la funcion "get()", le estamos indicando que busque en el diccionario la clave indicada por el usuario.
 # Adicional a lo anterior, el argumento "0" significa que si el usuario ingresa una clave que no existe en el diccionario, el valor por defecto a mostrar sera cero
 
 #Si queremos que el valor ingresado por el usuario se convierta en una clave del diccionario, podemos hacer entonces uso de la funcion "setdefault()":
@@ -127,8 +131,10 @@ unidades = materiales.get(articulo, 0) #Aqui cuando le ponemos como argumento ol
 
 print("Hay {} unidades de {}".format(unidades, articulo))
 
-'''
+print(materiales)
 
+
+'''
 
 
 
