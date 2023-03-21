@@ -4,7 +4,7 @@ donations = dict(sam=25.0, lena=88.99, chuck=13.0, linus=99.5, stan=150.0, lisa=
 
 total_donations = 0 #Iniciamos esta variable en cero ya que nos va a servir de variable de acumulación
 
-for i in donations.values():
+for i in donations.values(): #Al poner el metodo ".values", le estamos indicando al BUCLE FOR, que recorra los valores del diccionario llamado "donations"
     total_donations += i # El "+=" se conoce como un operador de asignación y lo que indica es: "total_donations = total_donations + i". Entonces en cada iteración se ira sumandoa  la variable "total_donations" lo que valga "i"
 
 

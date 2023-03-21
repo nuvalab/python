@@ -2,7 +2,7 @@
 from random import choice #DON'T CHANGE!
 food = choice(["cheese pizza", "quiche","morning bun","gummy bear","tea cake"]) #DON'T CHANGE! #Con el metodo "choice" que hace parte del modulo "random" se selecciona aleatoriamente un elemento de la lista
 
-#DON'T CHANGE THIS DICTIONARY EITHER!
+#Definimos el diccionario:
 bakery_stock = {
     "almond croissant" : 12,
     "toffee cookie": 3,
@@ -11,7 +11,6 @@ bakery_stock = {
     "tea cake": 25
 }
 
-# YOUR CODE GOES BELOW:
 
 # print(f'{"{} left".format(bakery_stock["tea cake"])}') #De esta forma se llama una clave de un diccionario usando el metodo "format()"
 
