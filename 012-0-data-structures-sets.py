@@ -1,6 +1,10 @@
 #Veamos como definir un SET
 my_set={"Esteban",27,'Single',327,'Rich'} #Lo que lo diferencia de un diccionario es que aqui no especificamos un key/value
 print(type(my_set)) #Con esto podemos validar que tipo de colección o variable es esta
+
+#Si quisieremos que nuestro set fuese inmutable, podemos hacer lo siguiente:
+# my_set=frozenset({"Esteban",27,'Single',327,'Rich'})
+
 my_set.add("Colombian") #Con el metodo ".add()" podemos añadir nuevos elementos/items al set. Si el elemento ya existe, no lo agrega dado que los sets no muestran elementos repetidos
 # my_set.remove("dog") #Si queremos eliminar alguno elemento/item del set, usamos el metodo ".remove"
 # IMPORTANTE: Si ponemos como argumento un item que no existe, haciendo uso del metodo ".remove", se interrumpira, la ejecucion del script y nos sacara un error. Por ello es mejor esta otra opcion:
@@ -48,3 +52,8 @@ diferencia_1=set_a - set_b #Aqui mostrariamos los elementos que estan en "set_a"
 diferencia_2=set_b - set_a
 print(diferencia_1)
 print(diferencia_2)
+
+
+#Si queremos ver cuales valores estan en "set_a" y en "set_b" pero que no estan en ambos sets:
+diferecia_simetrica = set_a ^ set_b
+print(diferecia_simetrica)
