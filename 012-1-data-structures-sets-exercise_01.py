@@ -5,6 +5,7 @@ numbers = (1,2,3,4)
 # 2 - Create a variable called value which is a tuple with the the value 1 inside.
 
 value = (1,)
+print(type(value))
 
 # 3 - Given the following variable:
 
