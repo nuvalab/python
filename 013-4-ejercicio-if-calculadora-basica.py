@@ -19,6 +19,6 @@ elif operacion == 'multiplicacion':
     print (f'El resultado de multiplicar {num1} y {num2} es {multiplicacion}') 
 elif operacion == 'division':
     division = num1 / num2
-    print (f'El resultado de multiplicar {num1} y {num2} es {division:.2f}') #Aqui utilice ":.2f" para que en el caso en que el resultado tenga decimales, me muestre maximo 2
+    print (f'El resultado de dividir {num1} y {num2} es {division:.2f}') #Aqui utilice ":.2f" para que en el caso en que el resultado tenga decimales, me muestre maximo 2
 else:
     print('Has seleccionado una opcion incorrecta')
