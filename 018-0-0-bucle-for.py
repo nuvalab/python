@@ -46,9 +46,9 @@ mi_diccionario = {"nombre":"Samantha", "profesion":"publicista", "edad":33, "col
 
 # print(f'{mi_diccionario.items()}')
 # for i in mi_diccionario:
-#     # print(f'{i}')
-#     print(f'{i} --> {mi_diccionario[i]}')
+#     print(f'{i}')
+#     # print(f'{i} --> {mi_diccionario[i]}')
 
 
-# for clave,valor in mi_diccionario.items():
-#     print(f'La clave es {clave}, y el valor es {valor}')
+for clave,valor in mi_diccionario.items():
+    print(f'La clave es {clave}, y el valor es {valor}')

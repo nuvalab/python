@@ -9,7 +9,7 @@ Sentencia de control: break:  básicamente lo que va a hacer es frenar la iterac
 # for i in [3,2,7]: #Sin el "brake" normalmente el loop imprimiria todos los elementos del array, sin embargo dado que vamos a poner un brake despues del print, solo se imprimira la primer iteracion
 #     print(i)
     # break # Este break interrumpiria la iteración del bucle FOR
-# #Tambien podemos poner un IF anidado que indique que el bucle itere hasta llegar a cierto elemento
+#Tambien podemos poner un IF anidado que indique que el bucle itere hasta llegar a cierto elemento
     # if i == 2:
     #     break #En este caso entonces el loop itera hasta encontrar un elemento en el array que se llame "2" y una vez impreso se interrumpe la iteración del bucle
     
@@ -52,10 +52,10 @@ Sentencia de control: continue
 
 '''
 
-# for each in range(10):
-#     if each == 7:
-#         continue #Este omite una parte del bucle cuando se cumple una condición y continua con el resto
-#     print(each)
+for each in range(10):
+    if each == 7:
+        continue #Este omite una parte del bucle cuando se cumple una condición y continua con el resto
+    print(each)
 
 
 

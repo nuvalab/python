@@ -38,10 +38,10 @@
 
 #Ahora veamos como lo anterior funciona con un FOR:
 
-# my_list_3 = [(1,4),(3,7),(9,1)] #Veamos que aqui cada tupla contiene dos elementos. Si hay una que contenga mas de dos va a mostrarnos un error
+my_list_3 = [(1,4),(3,7),(9,1)] #Veamos que aqui cada tupla contiene dos elementos. Si hay una que contenga mas de dos va a mostrarnos un error
 
-# for t1,t2 in my_list_3:
-#     print(t1) #Aqui se imprimiria el primer elemento de cada tupla, y se imprimiria como entero. Si quisieramos imprimir ambos seria algo como "print(t1,t2)"
+for t1,t2 in my_list_3:
+    print(t1,t2) #Aqui se imprimiria el primer elemento de cada tupla, y se imprimiria como entero. Si quisieramos imprimir ambos seria algo como "print(t1,t2)"
 
 
 #Veamos ahora como imprimir los key values (key+value) en los diccionarios haciendo uso de un FOR

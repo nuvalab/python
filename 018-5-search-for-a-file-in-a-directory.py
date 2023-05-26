@@ -9,7 +9,7 @@ target_directory = r"G:\Other computers\My Laptop\PROYECTOS +++\TI\Aprendiendo P
 
 
 #Indicamos el nombre del archivo que vamos a buscar:
-target_file = "direccionesip.txt"
+target_file = "Direccionesip.txt"
 
 
 #Para que entendamos bien como el FOR recorre los directorios teniendo diferentes variables de control, veamos que es lo que imprime la función "os.walk()":
@@ -18,14 +18,14 @@ target_file = "direccionesip.txt"
 
 
 #Esto entonces me muestra una chorrera de cosas, pero basicamente en cada iteración el FOR de mas abajo va a
-for root,dirs,files in os.walk(target_directory): #Vemos que le pasamos como argumento a la funcion  "os.walk()" la variable donde se encuentra la ruta del directorio. Al final para eso sirve esa funcion, para recorrer directorios recursivamente
-    print(root)
-    print(dirs)
-    print(files)
-    print("=======================================")
+# for root,dirs,files in os.walk(target_directory): #Vemos que le pasamos como argumento a la funcion  "os.walk()" la variable donde se encuentra la ruta del directorio. Al final para eso sirve esa funcion, para recorrer directorios recursivamente
+#     print(root)
+#     print(dirs)
+#     print(files)
+#     print("=======================================")
 
 '''
-CONCLUSION: Entonces el FOR nos va a mostrar cada ITERACIÓN separa por "=======================================", pa eso puse eso ahi, para diferenciar cada iteración. 
+CONCLUSION: Entonces el FOR nos va a mostrar cada ITERACIÓN separada por "=======================================", pa eso puse eso ahi, para diferenciar cada iteración. 
 
 --
 En la PRIMER ITERACIÓN me muestra la RUTA inicial desde donde parte, la cual es la indicada en la variable "target_directory", entonces:
@@ -59,16 +59,16 @@ files ---> Muestra los archivos que hay dentro de la ruta definida en la variavl
 IMPORTANTE: Estas variables de control antes mencionadas, pueden tener el nombre que nosotros queramos
 '''
 
-# file_found = False # Variable para seguir el estado de si el archivo fue encontrado
+file_found = False # Variable para seguir el estado de si el archivo fue encontrado
 
-# for relPath,dirs,files in os.walk(target_directory):
-#     # print(files)
-#     if target_file in files: #Esta condición indica que si el nombre de archivo indicado en la variable "target_file" esta dentro de los "files/archivos que existen recursivamente dentro del directorio", entonces que haga lo de la siguiente linea
-#         fullPath = os.path.join(target_directory, relPath, target_file) # Si encontramos una coincidencia, construimos la ruta completa del archivo utilizando os.path.join() y la imprimimos en la consola.
-#         print(f'El archivo fue encontrado en la siguiente ruta: {fullPath}')
-#         file_found = True # Cambiamos el estado a True para indicar que se encontró el archivo
-# if not file_found: #Aqui este NOT quiere decir que si el valor de la variable "file_found" es "false", entonces imprima lo que sigue en la siguiente linea
-#     print(f'El archivo {target_file} no existe en esta ruta')
+for relPath,dirs,files in os.walk(target_directory):
+    # print(files)
+    if target_file in files: #Esta condición indica que si el nombre de archivo indicado en la variable "target_file" esta dentro de los "files/archivos que existen recursivamente dentro del directorio", entonces que haga lo de la siguiente linea
+        fullPath = os.path.join(target_directory, relPath, target_file) # Si encontramos una coincidencia, construimos la ruta completa del archivo utilizando os.path.join() y la imprimimos en la consola.
+        print(f'El archivo fue encontrado en la siguiente ruta: {fullPath}')
+        file_found = True # Cambiamos el estado a True para indicar que se encontró el archivo
+if not file_found: #Aqui este NOT quiere decir que si el valor de la variable "file_found" es "false", entonces imprima lo que sigue en la siguiente linea
+    print(f'El archivo {target_file} no existe en esta ruta')
 
 
 
@@ -85,21 +85,21 @@ Tambien podemos crear un SCRIPT pero esta vez con una función
 
 
 
-def encontrar_archivo(target_directory, target_file):
+# def encontrar_archivo(target_directory, target_file):
 
-    file_found = False
+#     file_found = False
     
-    for relPath,dirs,files in os.walk(target_directory):
-        if target_file in files: #Esta condición indica que si el nombre de archivo indicado en la variable "target_file" esta dentro de los "files/archivos que existen recursivamente dentro del directorio", entonces que haga lo de la siguiente linea
-            fullPath = os.path.join(target_directory, relPath, target_file) # Si encontramos una coincidencia, construimos la ruta completa del archivo utilizando os.path.join() y la imprimimos en la consola.
-            print(f'El archivo fue encontrado en la siguiente ruta: {fullPath}')
-            file_found = True
-            break #Al agregar break después de encontrar el archivo, se interrumpe la ejecución del bucle for y el programa continúa después del bloque del bucle for. Esto evita que se sigan buscando archivos innecesariamente una vez que se ha encontrado el archivo buscado.
+#     for relPath,dirs,files in os.walk(target_directory):
+#         if target_file in files: #Esta condición indica que si el nombre de archivo indicado en la variable "target_file" esta dentro de los "files/archivos que existen recursivamente dentro del directorio", entonces que haga lo de la siguiente linea
+#             fullPath = os.path.join(target_directory, relPath, target_file) # Si encontramos una coincidencia, construimos la ruta completa del archivo utilizando os.path.join() y la imprimimos en la consola.
+#             print(f'El archivo fue encontrado en la siguiente ruta: {fullPath}')
+#             file_found = True
+#             break #Al agregar break después de encontrar el archivo, se interrumpe la ejecución del bucle for y el programa continúa después del bloque del bucle for. Esto evita que se sigan buscando archivos innecesariamente una vez que se ha encontrado el archivo buscado.
 
-    if not file_found:
-        print(f'El archivo {target_file} no fue encontrado')
+#     if not file_found:
+#         print(f'El archivo {target_file} no fue encontrado')
         
-encontrar_archivo(target_directory, target_file)
+# encontrar_archivo(target_directory, target_file)
 
 
 #NOTA: Lo siguiente muestra un MIERDERO de cosas. Lo dejo porque me gusta esa estructura del PRINT
