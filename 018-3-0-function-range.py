@@ -4,6 +4,7 @@
 print(range(5))
 print(list(range(5)))
 
+
 # A continuación veremos como con un ciclo FOR podemos recorrer un rango
 # for i in range(5): #Aqui estamos indicando que el rango/array va a contener hasta el numero 5-1, osea hasta el 4.
 #     print(i)
