@@ -8,7 +8,7 @@ print(my_string1.upper()) #Con esta funcion puedo convertir todos los caracteres
 
 
 #Como hemos visto en otras ocasiones tambien podemos crear una nueva variable donde su valor sea el metodo o funcion, y luego imprimir dicha variable
-my_string_lower=my_string2.lower() #En esta variable estamos convirtiendo el valor de la variable "my_string2" a minusculas. En este caso el valor de dicha variable es un "string"
+my_string_lower = my_string2.lower() #En esta variable estamos convirtiendo el valor de la variable "my_string2" a minusculas. En este caso el valor de dicha variable es un "string"
 print(my_string_lower)
 
 
