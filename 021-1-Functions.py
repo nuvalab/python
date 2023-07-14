@@ -19,7 +19,7 @@ def suma(a,b,c): #Aqui establecemos los PARAMETROS de la función entre parentes
     # print(resultado)
     # print("Hola")
 
-result = suma(7,3,2)
+result = suma(7,3,2) #Aqui estamos creando una variable cuyo valor es el resultado de la función. Esto es util para el caso en el que queramos imprimir o trabajar con este resultado mas abajo en el codigo
 print(result)
 
 

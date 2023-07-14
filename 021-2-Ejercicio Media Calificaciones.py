@@ -25,9 +25,13 @@ while True:
 
 
 def promedio(mi_lista):
-    suma = sum(mi_lista)
-    media = suma / len(mi_lista) #La función "len()" nos tira como resultado la cantidad de elementos que tiene un array en este caso
-    return f'La media de acuerdo a los valores proporcionados es: {media}'
-    # return suma / len(my_list)
+    # if len(mi_lista) == 0:
+    if not any(mi_lista): #Puedes utilizar la función any() para verificar si la lista contiene al menos un elemento. La función any() devuelve True si al menos un elemento de la secuencia es verdadero. En este caso, not any(mi_lista) devuelve True si la lista está vacía (es decir, no contiene elementos), y en ese caso se devuelve el mensaje indicando que la lista está vacía.
+        return "La lista está vacía. No se puede calcular el promedio."
+    else:
+        suma = sum(mi_lista)
+        media = suma / len(mi_lista) #La función "len()" nos tira como resultado la cantidad de elementos que tiene un array en este caso
+        return f'La media de acuerdo a los valores proporcionados es: {media}'
+        # return suma / len(my_list)
 
 print(promedio(my_list)) #Aqui estamos pasando como argumento el nombre de una variable/array, la cual contiene como elementos los numeros que queremos calcular
