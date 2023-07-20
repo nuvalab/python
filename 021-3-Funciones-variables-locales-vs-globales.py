@@ -76,7 +76,7 @@ def main():
     a=eval(input('Enter your first num: '))
     b=eval(input('Enter your second num: '))
     get_add(a,b) #Aca le llamamos argumentos a "a" y "b"
-    get_sub(7,3)
+    get_sub(b,a)
 
 main()
 
