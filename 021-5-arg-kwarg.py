@@ -15,25 +15,26 @@ print(suma(3,2,7))
 
 '''
 def suma(*args): #"*args" almacena los argumentos en una TUPLA. Podemos asignarle el nombre que queramos a este PARAMETRO siempre y cuando lleve un asterisco delante del nombre
-    # print(type(args))
+    print(type(args))
     print(args)
     return sum(args)
 
-print(suma(3,2,7))
+print(suma(3,2))
 '''
 
 '''
 def suma(a, b, *args):
     print(a)
+    print(b)
     # print(type(args))
     return sum(args)
 
-print(suma(3,2,7))
+print(suma(3,2,7,5,1))
 '''
 
 '''
 def saludo(*args):
-    print(type(args))
+    # print(type(args))
     for i in args:
         print(i)
 
@@ -46,25 +47,25 @@ saludo("esteban", "juliana", "andres")
 #Ahora veamos un ejemplo de **kwargs
 
 '''
-def say_hi(a, **kwargs): #"**kwargs" almacena los argumentos en un DICCIONARIO. Podemos asignarle el nombre que queramos a este PARAMETRO siempre y cuando lleve un asterisco delante del nombre
+def say_hi(a, **kwargs): #"**kwargs" almacena los argumentos en un DICCIONARIO. Podemos asignarle el nombre que queramos a este PARAMETRO siempre y cuando lleve dos asteriscos delante del nombre
     # print(type(kwargs))
     # print(a)
     for i in kwargs:
         # print(i)
         print(f'Hi {kwargs[i]}')
         
-say_hi("juan",name1="Esteban", name2="Samantha", name3="Daniela", name4="Matias")
+say_hi("juan",name1="Esteban", name2="Samantha", name3="Daniela", name4="Matias", name5="Sarah")
 '''
 
 
 #Veamos un ejemplo similar donde usando la funcion "item()" nos permite listar el KEY y el VALUE de cada elemento en el diccionario
-'''
+
 def empleado(**kwargs):
     for key, value in kwargs.items():
         print(f'{key}: {value}')
         
 empleado(nombre="Esteban",profesion="Marketer Diseñador")
-'''
+
 
 #Otro ejemplo mas:
 '''

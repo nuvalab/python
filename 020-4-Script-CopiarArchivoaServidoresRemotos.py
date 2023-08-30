@@ -74,6 +74,7 @@ for servidor in servidores:
     )
     
     # Agregamos la conexión SSH a la lista llamada "conexiones_ssh"
+    print(f'QUIERO VER QUE CONTIENE ESTA VARIABLE{ssh}')
     conexiones_ssh.append(ssh)
 
 
